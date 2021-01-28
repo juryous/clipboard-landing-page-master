@@ -1,0 +1,67 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--Grayish-Blue);
+  line-height: 1.65;
+  font-family: 'Bai Jamjuree';
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* utility classes */
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* General styles */
+
+.btn {
+  display: block;
+  padding: 1em 2.25em;
+  background-color: var(--Strong-Cyan);
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  border-radius: 100vw;
+}
+
+@media (min-width: 40em) {
+  .btn {
+    display: inline-block;
+  }
+}
