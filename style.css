@@ -142,7 +142,7 @@ header .btn {
     background-size: contain;
   }
   header a:nth-of-type(2) {
-    margin-right: 1rem;
+    margin-right: 0.75rem;
   }
 
   header h1 {
@@ -217,4 +217,20 @@ header .btn {
 
 .section-4 img {
   max-width: 40%;
+}
+
+/* Section 5 */
+
+.section-5 {
+  padding-bottom: 9rem;
+}
+
+.section-5 a:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .section-5 a:first-of-type {
+    margin-right: 0.75rem;
+  }
 }
