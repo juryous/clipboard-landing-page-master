@@ -74,6 +74,7 @@ img {
 .flex {
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 
 @media (min-width: 40em) {
@@ -87,6 +88,10 @@ img {
 header,
 section {
   padding: 3rem 0;
+}
+
+section > p:first-of-type {
+  margin-bottom: 4rem;
 }
 
 .btn {
@@ -152,20 +157,10 @@ header .btn {
 
 /* Section 1 */
 
-.section-1 > p:first-of-type {
-  margin-bottom: 4rem;
-}
-
-.right-column {
-  margin-top: 2rem;
-  gap: 1em;
-}
-
 @media (min-width: 40em) {
   .shifted {
     align-items: center;
     justify-content: space-between;
-    gap: 2em;
   }
 
   .img-div {
@@ -177,6 +172,7 @@ header .btn {
     transform: translateX(-28%);
     flex-direction: column;
     flex-basis: 70%;
+    gap: 1em;
     text-align: left;
     max-width: 38ch;
   }
@@ -184,4 +180,23 @@ header .btn {
   .section-1 h3 {
     margin-bottom: 0;
   }
+}
+
+/* Section 3 */
+
+.section-3 .flex {
+  justify-content: center;
+}
+
+.section-3 .flex > * {
+  flex-basis: 100%;
+}
+
+.section-3 h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.blacklist {
+  height: 32px;
 }
