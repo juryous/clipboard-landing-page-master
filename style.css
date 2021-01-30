@@ -74,7 +74,7 @@ img {
 
 .container {
   width: 83%;
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -253,6 +253,11 @@ footer > .flex {
   gap: 0;
 }
 
+footer a:hover,
+footer a:focus {
+  color: var(--Strong-Cyan);
+}
+
 footer .logo {
   max-width: 60px;
 }
@@ -278,10 +283,6 @@ footer .logo {
 @media (min-width: 40em) {
   footer {
     padding: 0;
-  }
-
-  footer a:hover {
-    color: var(--Strong-Cyan);
   }
 
   .footer-nav {
