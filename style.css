@@ -4,6 +4,7 @@
 
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
+  --Light-Gray: #f5f6f8;
 }
 
 /* Reset */
@@ -38,6 +39,12 @@ h2 {
 
 h3 {
   font-size: 1.55rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 200ms ease;
 }
 
 @media (min-width: 40em) {
@@ -94,6 +101,11 @@ section > p:first-of-type {
   margin-bottom: 4rem;
 }
 
+.btn-div {
+  gap: 1em;
+  justify-content: center;
+}
+
 .btn {
   display: block;
   padding: 1.15em 2.25em;
@@ -104,6 +116,12 @@ section > p:first-of-type {
   letter-spacing: 1px;
   border-radius: 100vw;
   box-shadow: inset 0px -2px 0px 1px rgba(0, 0, 0, 0.25);
+  transition: opacity 200ms ease;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
 }
 
 .btn--blue {
@@ -130,10 +148,6 @@ header .logo {
 
 header p {
   margin-bottom: 3rem;
-}
-
-header .btn {
-  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 40em) {
@@ -212,6 +226,7 @@ header .btn {
 .section-4 {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 4em;
 }
 
@@ -225,12 +240,69 @@ header .btn {
   padding-bottom: 9rem;
 }
 
-.section-5 a:first-of-type {
-  margin-bottom: 1.5rem;
+/* Footer */
+
+footer {
+  background-color: var(--Light-Gray);
+  padding: 3em 0;
+}
+
+footer > .flex {
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+footer .logo {
+  max-width: 60px;
+}
+
+.footer-nav {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: bold;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  max-width: 70rem;
+}
+
+.social {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.75rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 0;
 }
 
 @media (min-width: 40em) {
-  .section-5 a:first-of-type {
-    margin-right: 0.75rem;
+  footer {
+    padding: 0;
+  }
+
+  footer a:hover {
+    color: var(--Strong-Cyan);
+  }
+
+  .footer-nav {
+    text-align: left;
+    font-size: 1.25rem;
+    gap: 1em;
+  }
+
+  .footer-nav > li {
+    flex-basis: 170px;
+  }
+
+  .footer-nav li:nth-child(4) {
+    order: 5;
+  }
+
+  .footer-nav li:nth-child(2) {
+    order: 4;
+  }
+
+  .social {
+    margin: 0 0 0 6rem;
   }
 }
